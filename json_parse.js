@@ -139,7 +139,8 @@ var json_parse = (function () {
                 next();
             }
         }
-        value = +string;
+		console.log(string)
+        value = string;
         if (!isFinite(value)) {
             error("Bad number");
         } else {
